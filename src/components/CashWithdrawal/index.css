@@ -1,0 +1,78 @@
+/* Write your CSS here */
+.bg-container {
+  background-color: #150b3e;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 200px;
+}
+.card1-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'roboto';
+}
+.card1-heading {
+  padding-top: 19px;
+  height: 80px;
+  width: 80px;
+  background-color: #c7d2fe;
+  margin: 50px;
+  text-align: center;
+  border-radius: 45px;
+  color: #382f5a;
+}
+.card1-para {
+  color: #c7d2fe;
+  font-size: 25px;
+}
+.card2-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'roboto';
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.card2-heading {
+  color: #585076;
+  font-size: 25px;
+}
+.total-amount-container {
+  margin-right: ;
+}
+.total-amount {
+  color: #c7d2fe;
+}
+.card2-para {
+  color: #585076;
+  font-size: 15px;
+  font-weight: 510;
+}
+.withdraw {
+  color: #c7d2fe;
+  font-size: 25px;
+  padding-left: 50px;
+}
+.choose-sum-para {
+  padding-left: 50px;
+  color: #585076;
+  font-size: 20px;
+  font-weight: 510;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.button-style {
+  margin: 60px;
+  color: #c7d2fe;
+  height: 40px;
+  width: 180px;
+  background-color: #585076;
+  border-radius: 8px;
+  font-size: 25px;
+}
