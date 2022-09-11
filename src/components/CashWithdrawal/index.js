@@ -1,17 +1,19 @@
 // Write your code here
 import {Component} from 'react'
+import DenominationButton from '../DenominationItem'
 import './index.css'
 
 class CashWithdrawal extends Component {
   state = {amount: 2000}
 
-  onDecreament = () => {
-    this.setState(prevState => ({
-      amount: prevState.amount - 50,
-    }))
+  decreaseAmount = value => {
+    this.setState(prevState => {
+      amount: prevState.amount - value
+    })
   }
 
   render() {
+    const {denominationsList} = this.props
     const {amount} = this.state
     return (
       <div>
@@ -30,26 +32,13 @@ class CashWithdrawal extends Component {
           <h1 className="withdraw">Withdraw</h1>
           <p className="choose-sum-para">CHOOSE SUM (IN RUPEES)</p>
           <div className="btn-container">
-            <div>
-              <button
-                className="button-style"
-                type="button"
-                onClick={this.onDecreament}
-              >
-                50
-              </button>
-              <button className="button-style" type="button">
-                100
-              </button>
-            </div>
-            <div>
-              <button className="button-style" type="button">
-                200
-              </button>
-              <button className="button-style" type="button">
-                500
-              </button>
-            </div>
+            {denominationsList.map(eachDenomination => (
+              <DenominationButton
+                eachDenomination={eachDenomination}
+                key={eachDenomination.id}
+                decreaseAmount={this.decreaseAmount}
+              />
+            ))}
           </div>
         </div>
       </div>
