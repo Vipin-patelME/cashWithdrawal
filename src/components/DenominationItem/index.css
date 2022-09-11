@@ -1,1 +1,12 @@
 /* Write your CSS here */
+/* Write your CSS here */
+.button-style {
+  text-align: center;
+  margin: 60px;
+  color: #c7d2fe;
+  height: 40px;
+  width: 180px;
+  background-color: #585076;
+  border-radius: 8px;
+  font-size: 25px;
+}
